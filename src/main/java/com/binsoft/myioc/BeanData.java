@@ -12,11 +12,12 @@ public class BeanData<T> {
 
     /**
      * 构造函数
+     *
      * @param myContainer
      * @param beanDefinition
      * @param bean
      */
-    public BeanData(final MyContainer myContainer,final BeanDefinition<T> beanDefinition,final T bean){
+    public BeanData(final MyContainer myContainer, final BeanDefinition<T> beanDefinition, final T bean) {
         this.pc = myContainer;
         this.beanDefinition = beanDefinition;
         this.bean = bean;
@@ -24,35 +25,41 @@ public class BeanData<T> {
 
     /**
      * 构造函数
+     *
      * @param myContainer
      * @param beanDefinition
      */
-    public BeanData(final MyContainer myContainer,final BeanDefinition<T> beanDefinition){
+    public BeanData(final MyContainer myContainer, final BeanDefinition<T> beanDefinition) {
         this.pc = myContainer;
         this.beanDefinition = beanDefinition;
-        this.bean = (T)newBeanInstance();
+        this.bean = (T) newBeanInstance();
     }
 
     /**
      * 返回{@link BeanDefinition}
+     *
      * @return
      */
-    public BeanDefinition<T> definition(){return beanDefinition;}
+    public BeanDefinition<T> definition() {
+        return beanDefinition;
+    }
 
     /**
      * 返回bean实例
+     *
      * @return
      */
-    public T bean(){
+    public T bean() {
         return bean;
     }
 
     /**
      * 创建实例
+     *
      * @return
      */
-    public Object newBeanInstance(){
-        if(beanDefinition.ctorInjectionPoint == CtorInjectionPoint.EMPTY){
+    public Object newBeanInstance() {
+        if (beanDefinition.ctorInjectionPoint == CtorInjectionPoint.EMPTY) {
             throw new MyIOCException("无构造函数注入点===>" + beanDefinition.type.getName());
         }
 
@@ -60,10 +67,10 @@ public class BeanData<T> {
         //beanDefinition.ctor.references.length;
         final Object bean;
 
-        try{
-             bean = beanDefinition.ctorInjectionPoint.constructor.newInstance(null);
-        }catch (Exception ex){
-            throw new MyIOCException("创建新实例失败===>'" + beanDefinition.type.getName() + "' 构造函数:" + beanDefinition.ctorInjectionPoint.constructor,ex);
+        try {
+            bean = beanDefinition.ctorInjectionPoint.constructor.newInstance(null);
+        } catch (Exception ex) {
+            throw new MyIOCException("创建新实例失败===>'" + beanDefinition.type.getName() + "' 构造函数:" + beanDefinition.ctorInjectionPoint.constructor, ex);
         }
         return bean;
 

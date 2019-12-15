@@ -9,9 +9,10 @@ public class BeanReferences {
 
     /**
      * 取得名称
+     *
      * @return
      */
-    public String name(){
+    public String name() {
         return this.name;
     }
 

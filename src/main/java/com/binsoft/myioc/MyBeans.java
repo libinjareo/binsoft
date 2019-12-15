@@ -33,7 +33,7 @@ public abstract class MyBeans {
      * @param name
      * @return
      */
-    public BeanDefinition lookupBeanDefinition(final String name){
+    public BeanDefinition lookupBeanDefinition(final String name) {
         BeanDefinition beanDefinition = beans.get(name);
         return beanDefinition;
     }
@@ -41,12 +41,13 @@ public abstract class MyBeans {
     /**
      * 返回存在的{@link BeanDefinition }.
      * 如果bean不存在，则抛出异常
+     *
      * @param name
      * @return
      */
-    protected BeanDefinition lookupExistingBeanDefinition(final String name){
+    protected BeanDefinition lookupExistingBeanDefinition(final String name) {
         BeanDefinition beanDefinition = lookupBeanDefinition(name);
-        if(beanDefinition == null){
+        if (beanDefinition == null) {
             throw new MyIOCException("Bean not found: " + name);
         }
         return beanDefinition;
@@ -54,8 +55,9 @@ public abstract class MyBeans {
 
     /**
      * 注册或定义一个 bean
-     * @param type  bean的类型，必须指定
-     * @param name  bean的名称，如果为<code>null</code>,将会从class中解析
+     *
+     * @param type bean的类型，必须指定
+     * @param name bean的名称，如果为<code>null</code>,将会从class中解析
      * @param <T>
      * @return
      */
@@ -131,9 +133,10 @@ public abstract class MyBeans {
 
     /**
      * 返回注册bean的总数量
+     *
      * @return
      */
-    public int beansCount(){
+    public int beansCount() {
         return beans.size();
     }
 

@@ -43,9 +43,10 @@ public class BeanDefinition<T> {
 
     /**
      * 返回构造函数注入点
+     *
      * @return
      */
-    public CtorInjectionPoint ctorInjectionPoint(){
+    public CtorInjectionPoint ctorInjectionPoint() {
         return ctorInjectionPoint;
     }
     // ----------------------------------------------------------------  toString方法
