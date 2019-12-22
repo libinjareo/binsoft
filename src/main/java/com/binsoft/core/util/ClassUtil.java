@@ -1,5 +1,11 @@
 package com.binsoft.core.util;
 
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Member;
+import java.lang.reflect.Modifier;
+import java.security.AccessControlContext;
+import java.security.AccessController;
+import java.security.PrivilegedAction;
 import java.util.*;
 
 /**
@@ -76,5 +82,45 @@ public class ClassUtil {
             list.add(type);
         }
         return list.toArray(new Class[0]);
+    }
+
+    /**
+     * 如果类是public的，则返回<code>true</code>
+     * @param c
+     * @return
+     */
+    public static boolean isPublic(final Class c){
+        return Modifier.isPublic(c.getModifiers());
+    }
+
+    /**
+     * 如果类成员是Public，则返回<code>true</code>
+     * @param member
+     * @return
+     */
+    public static boolean isPublic(final Member member){
+        return Modifier.isPublic(member.getModifiers());
+    }
+
+    /**
+     * 禁止对反射对象进行访问检查，SecurityException将会被忽略。
+     * 首先检查对象是否已经被访问。
+     * @param accObject
+     */
+    public static void forceAccess(final AccessibleObject accObject){
+
+        try{
+            if(System.getSecurityManager() == null){
+                accObject.setAccessible(true);
+            }else{
+                AccessController.doPrivileged((PrivilegedAction) () -> {
+                    accObject.setAccessible(true);
+                    return null;
+                });
+            }
+        }catch(SecurityException e){
+            //ignore
+        }
+
     }
 }

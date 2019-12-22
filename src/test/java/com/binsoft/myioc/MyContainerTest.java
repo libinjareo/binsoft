@@ -8,7 +8,7 @@ import org.junit.After;
 * MyContainer Tester. 
 * 
 * @author <Authors name> 
-* @since <pre>ʮ���� 7, 2019</pre> 
+* @since <pre>7, 2019</pre>
 * @version 1.0 
 */ 
 public class MyContainerTest { 
@@ -32,14 +32,11 @@ public void testGetBean() throws Exception {
     MyContainer container = new MyContainer();
     container.registerMyBean(Foo.class,"foo");
     Foo foo = container.getBean("foo");
-    System.out.println(foo);
+    Foo foo1 = container.getBean("foo");
+    System.out.println("foo instance:"+foo);
+    System.out.println("foo1 instance:"+foo1);
+    foo.hello();
+    foo1.hello();
 }
-
-class Foo {
-   Foo(){
-        System.out.println("foo...");
-    }
-}
-
 
 } 

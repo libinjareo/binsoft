@@ -1,0 +1,16 @@
+@startuml
+MyContainer -> BeanDefinition: lookupBeanDefinition
+note left
+    根据bean的类型，通过CtorResolver解析出BeanDefinition
+    的构造函数注入点，在初始化BeanData的时候，通过反射机制
+    实例化相应的Bean
+end note
+BeanDefinition --> CtorResolver: initBeanDefinition
+CtorResolver --> CtorInjectionPoint:resolve()
+
+CtorInjectionPoint --> BeanDefinition:complete initDefinition
+MyContainer --> BeanData:new BeanData()
+
+BeanData --> BeanInstance: newBeanInstance()
+
+@enduml

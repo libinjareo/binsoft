@@ -20,12 +20,12 @@ import java.util.function.Supplier;
  */
 public class ClassDescriptor {
     protected final Class type;
-    protected final boolean scanAccessible;
-    protected final boolean extendedProperties;
-    protected final boolean includeFieldsAsProperties;
-    protected final String[] propertyFieldPrefix;
-    protected final Class[] interfaces;
-    protected final Class[] superclasses;
+    protected final boolean scanAccessible;//判断类描述符是否适用于可访问的字段/方法/构造函数或都支持
+    protected final boolean extendedProperties;//判断是否扩展了类描述符中的属性并包含字段描述
+    protected final boolean includeFieldsAsProperties;//判断是否将字段包括为属性
+    protected final String[] propertyFieldPrefix;//属性字段前缀
+    protected final Class[] interfaces; //类型所有的接口
+    protected final Class[] superclasses;//类型所有的
 
     public ClassDescriptor(final Class type, final boolean scanAccessible, final boolean extendedProperties, final boolean includeFieldsAsProperties, final String[] propertyFieldPrefix) {
         this.type = type;
@@ -169,5 +169,57 @@ public class ClassDescriptor {
      */
     public boolean isSystemClass() {
         return isSystemClass;
+    }
+
+
+    // ---------------------------------------------------------------- 构造函数
+    private Ctors ctors;
+
+    /**
+     * 返回构造函数集合。
+     * 第一次访问时，会创建一个集合
+     * @return
+     */
+    protected Ctors getCtors(){
+        if(ctors == null){
+            ctors = new Ctors(this);
+        }
+        return ctors;
+    }
+
+    /**
+     * 返回默认的构造函数，如果未找到则返回<code>null</code>
+     * @param declared
+     * @return
+     */
+    public CtorDescriptor getDefaultCtorDescriptor(final boolean declared){
+        CtorDescriptor defaultCtor = getCtors().getDefaultCtor();
+        if((null != defaultCtor) && defaultCtor.matchDeclared(declared)){
+            return defaultCtor;
+        }
+        return null;
+
+    }
+
+    /**
+     * 返回指定参数的构造函数描述器，如果未找到则返回<code>null</code>
+     * @param args
+     * @param declared
+     * @return
+     */
+    public CtorDescriptor getCtorDescriptor(final Class[] args,final boolean declared){
+        CtorDescriptor ctorDescriptor = getCtors().getCtorDescriptor(args);
+        if((null != ctorDescriptor) && ctorDescriptor.matchDeclared(declared)){
+            return ctorDescriptor;
+        }
+        return null;
+    }
+
+    /**
+     * 返回{@link CtorDescriptor}构造函数描述符数组
+     * @return
+     */
+    public CtorDescriptor[] getAllCtorDescriptors(){
+        return getCtors().getAllCtorDescriptors();
     }
 }

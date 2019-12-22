@@ -1,0 +1,10 @@
+@startuml
+MyContainer -> BeanDefinition: RegisterMyBean(Class,name)
+   note left
+       (1) resolveBeanName(class,name)解析Bean名称
+       (2) 删除缓存中相同名称的BeanDefinition
+       (3) 根据名称和类型创建BeanDefinition
+       (4) registerBean(name, beanDefinition)到缓存
+   end note
+
+@enduml
