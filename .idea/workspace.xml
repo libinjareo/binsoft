@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cdecd63-650a-4f52-a2f2-4e0aa0852400" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/getBean.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registerBean.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CtorDescriptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Ctors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/binsoft/myioc/Foo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binsoft/core/util/ClassUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/core/util/ClassUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/binsoft/myioc/MyContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/binsoft/myioc/MyContainerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/BeanData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/BeanData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/BeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/BeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/MyBeans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/MyBeans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/MyContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/MyContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/def/BeanReferences.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binsoft/myioc/def/BeanReferences.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/binsoft/myioc/MyContainerTest$Foo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/binsoft/myioc/MyContainerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/binsoft/myioc/MyContainerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +18,8 @@
       <file leaf-file-name="BeanDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/BeanDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="189">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#921#922#0" expanded="true" />
                 <element signature="e#962#963#0" expanded="true" />
@@ -45,20 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CtorInjectionPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/def/CtorInjectionPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyContainerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyContainerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/binsoft/myioc/MyContainerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,17 +43,17 @@
       <file leaf-file-name="MyContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="626">
+              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CtorResolver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CtorResolver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="383">
+              <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +64,8 @@
       <file leaf-file-name="ClassIntrospector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassIntrospector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="25" selection-end-column="37" />
+            <state relative-caret-position="216">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#663#664#0" expanded="true" />
                 <element signature="e#718#719#0" expanded="true" />
@@ -100,16 +74,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Descriptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Descriptor.java">
+      <file leaf-file-name="CachingIntrospector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CachingIntrospector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="648">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassDescriptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1863#1864#0" expanded="true" />
+                <element signature="e#1890#1891#0" expanded="true" />
+                <element signature="e#5229#5230#0" expanded="true" />
+                <element signature="e#5286#5287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +106,8 @@
       <file leaf-file-name="Ctors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Ctors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+            <state relative-caret-position="567">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
                 <element signature="e#1710#1711#0" expanded="true" />
                 <element signature="e#1744#1745#0" expanded="true" />
@@ -130,32 +118,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TypeCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/core/cache/TypeCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#872#873#0" expanded="true" />
+                <element signature="method#noCache#0;class#Builder#0;class#TypeCache#0" />
+                <element signature="e#3371#3372#0" expanded="true" />
+                <element signature="e#3407#3408#0" expanded="true" />
+                <element signature="e#3554#3555#0" expanded="true" />
+                <element signature="e#3597#3598#0" expanded="true" />
+                <element signature="e#3724#3725#0" expanded="true" />
+                <element signature="e#3759#3760#0" expanded="true" />
+                <element signature="e#4584#4585#0" expanded="true" />
+                <element signature="e#4617#4618#0" expanded="true" />
+                <element signature="e#4718#4719#0" expanded="true" />
+                <element signature="e#4754#4755#0" expanded="true" />
+                <element signature="e#4893#4894#0" expanded="true" />
+                <element signature="e#4944#4945#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CtorDescriptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CtorDescriptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+            <state relative-caret-position="194">
+              <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#958#959#0" expanded="true" />
                 <element signature="e#992#993#0" expanded="true" />
                 <element signature="e#1242#1243#0" expanded="true" />
                 <element signature="e#1287#1288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/BeanData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,13 +198,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CtorDescriptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Ctors.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/binsoft/myioc/Foo.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/binsoft/myioc/MyContainerTest.java" />
         <option value="$PROJECT_DIR$/registerBean.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/getBean.puml" />
         <option value="$PROJECT_DIR$/getBean.puml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java" />
       </list>
     </option>
   </component>
@@ -229,7 +231,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="106" />
     <option name="y" value="481" />
     <option name="width" value="1940" />
@@ -495,7 +497,7 @@
       <workItem from="1575727643229" duration="15025000" />
       <workItem from="1576243646604" duration="1379000" />
       <workItem from="1576311657862" duration="39553000" />
-      <workItem from="1576850197665" duration="6749000" />
+      <workItem from="1576850197665" duration="8364000" />
     </task>
     <servers />
   </component>
@@ -520,7 +522,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87227000" />
+    <option name="totallyTimeSpent" value="88842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1062" extended-state="6" />
@@ -598,6 +600,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2997">
           <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1863#1864#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5286#5287#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -757,31 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/core/cache/TypeCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CachingIntrospector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/core/util/ClassUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="222" selection-start-line="222" selection-end-line="222" />
         </state>
       </provider>
     </entry>
@@ -899,18 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyBeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3268#3269#0" expanded="true" />
-            <element signature="e#3303#3304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/def/CtorInjectionPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -931,17 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/BeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/registerBean.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -953,61 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Ctors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-          <folding>
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#2626#2627#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CtorDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassIntrospector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="25" selection-end-column="37" />
-          <folding>
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,10 +934,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyBeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3268#3269#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CtorDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/BeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/core/cache/TypeCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="method#noCache#0;class#Builder#0;class#TypeCache#0" />
+            <element signature="e#3371#3372#0" expanded="true" />
+            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3554#3555#0" expanded="true" />
+            <element signature="e#3597#3598#0" expanded="true" />
+            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="e#3759#3760#0" expanded="true" />
+            <element signature="e#4584#4585#0" expanded="true" />
+            <element signature="e#4617#4618#0" expanded="true" />
+            <element signature="e#4718#4719#0" expanded="true" />
+            <element signature="e#4754#4755#0" expanded="true" />
+            <element signature="e#4893#4894#0" expanded="true" />
+            <element signature="e#4944#4945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassIntrospector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/CachingIntrospector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/ClassDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1863#1864#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5286#5287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/bean/introspector/Ctors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2657#2658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/binsoft/myioc/MyContainerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="216">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/MyContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/binsoft/myioc/resolver/CtorResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

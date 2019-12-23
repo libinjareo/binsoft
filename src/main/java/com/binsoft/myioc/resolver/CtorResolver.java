@@ -25,7 +25,9 @@ public class CtorResolver {
      */
     public CtorInjectionPoint resolve(final Class type) {
         //查找方法
+        //通过类自省器得到类描述符信息
         ClassDescriptor cd = ClassIntrospector.get().lookup(type);
+        //通过类描述符得到所有的构造函数描述符
         CtorDescriptor[] allCtors = cd.getAllCtorDescriptors();
         Constructor foundedCtor = null;
         Constructor defaultCtor = null;
