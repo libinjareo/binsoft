@@ -31,6 +31,10 @@ public void testGetBean() throws Exception {
 
     MyContainer container = new MyContainer();
     container.registerMyBean(Foo.class,"foo");
+
+    //设置构造函数注入点
+    Class[] classes = new Class[]{String.class};
+    container.registerMyCtorInjectionPoint("foo",classes,null);
     Foo foo = container.getBean("foo");
     Foo foo1 = container.getBean("foo");
     System.out.println("foo instance:"+foo);

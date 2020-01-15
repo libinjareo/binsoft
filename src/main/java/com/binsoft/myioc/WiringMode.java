@@ -23,49 +23,53 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-package com.binsoft.bean.introspector;
-
-import java.util.Objects;
+package com.binsoft.myioc;
 
 /**
- * 默认类自省{@link ClassIntrospector},简单的委托方法调用
+ * 装载模式
  */
-public interface ClassIntrospector {
+public enum WiringMode {
 
-    class Implementation {
-        private static ClassIntrospector classIntrospector = new CachingIntrospector();
+    /**
+     * 容器设置的默认的装载模式
+     */
+    DEFAULT(-1),
 
-        /**
-         * 设置默认实现
-         *
-         * @param classIntrospector
-         */
-        public static void set(final ClassIntrospector classIntrospector) {
-            Objects.requireNonNull(classIntrospector);
-            Implementation.classIntrospector = classIntrospector;
-        }
+    /**
+     * 任何情况都不会装载
+     */
+    NONE(0),
+
+    /**
+     * 显示的严格装载。装载显示定义的注入点。如果无法满足装载，则抛出异常。
+     */
+    STRICT(1),
+
+    /**
+     * 显示并松散装载，仅装载显示定义的注入点。如果无法满足状态，则不会抛出异常。
+     *
+     */
+    OPTIONAL(2),
+
+
+    /**
+     * 自动装载，Beans将会被注入到定义的注入点。所有满足命名约定的地方都会被注入。
+     * 如果装载不满足条件，则不会抛出异常。
+     */
+    AUTOWIRE(3);
+
+    private final int value;
+
+    WiringMode(final int value){
+        this.value = value;
     }
 
-    /**
-     * 返回默认实现
-     *
-     * @return
-     */
-    static ClassIntrospector get() {
-        return Implementation.classIntrospector;
+    public int value(){
+        return value;
     }
 
-
-    /**
-     * 返回指定类型的类描述符
-     *
-     * @param type
-     * @return
-     */
-    ClassDescriptor lookup(Class type);
-
-    /**
-     * 清空所有的缓存数据
-     */
-    void reset();
+    @Override
+    public String toString() {
+        return name();
+    }
 }
